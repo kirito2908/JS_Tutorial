@@ -11,4 +11,6 @@ myEmail = "kazutokirigaya2908@gmail.com";
 myPassword = "kirito2908";
 myLife = "still Kim SongSun";
 
+// Prefer not to use var much since it has issues with the scope
+
 console.table([myName, myEmail, myPassword, myLife]);
