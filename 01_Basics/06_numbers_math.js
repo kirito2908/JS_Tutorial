@@ -33,7 +33,7 @@ console.log(Math.random()); // To get random float number from 0 to 1
 console.log((Math.random()*10) + 1); // To get random float number from 1 to 10
 console.log(Math.floor((Math.random()*10) + 1)); // To get random integer number from 1 to 10
 
-let min = 10
-let max = 20
+let min = 20
+let max = 40
 
-console.log(Math.floor((Math.random() * 10) + 1) + min); // To get a random number from given minimum and maximum range
+console.log(Math.floor((Math.random() * (max - min) + 1)) + min); // To get a random number from given minimum and maximum range
