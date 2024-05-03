@@ -18,6 +18,8 @@ const myObj = {
     // Similarly, we can also give a function or another object as a value
 }
 
+myObj.city = "Seoul" // We can also add keys and values like this in an object
+
 // 2 methods to access values from objects
 
 console.log(myObj.email); // General method most people use but we can't access values like at 2nd index of our given object
@@ -30,7 +32,12 @@ myObj.greetings = function (){
     console.log("This Is Hello From Me");
 }
 
+myObj.greetingsAgain = function (){
+    console.log(`This Is Hello From ${this.name}`); // We can give reference of any value using 'this' keyword
+}
+
 console.log(myObj.greetings()); // We can also create function on object like this
+console.log(myObj.greetingsAgain());
 
 console.log(myObj);
 
