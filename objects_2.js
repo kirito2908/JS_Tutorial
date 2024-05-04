@@ -50,10 +50,23 @@ const obj6 = Object.assign(obj4, obj5);
 const obj7 = { ...obj1, ...obj2 } // using spread operator (...) remoes the {} and directly merges all elements of every objects mentioned
 // console.log(obj7);
 
-console.log(Object.keys(user)); // returns array of all keys of an object
-console.log(Object.values(user)); // returns array of all values of an object
-console.log(Object.entries(user)); // returns an array containing both keys and values as another array inside of it
+// console.log(Object.keys(user)); // returns array of all keys of an object
+// console.log(Object.values(user)); // returns array of all values of an object
+// console.log(Object.entries(user)); // returns an array containing both keys and values as another array inside of it
 
-console.log(user.hasOwnProperty("ismarried")); // return true since the mentioned key exists 
-console.log(user.hasOwnProperty("ismarriedTo")); // retrun false since the mentioned key doesn't exists
-console.log(newUser.email.hasOwnProperty("primary")); // to know if key exists or not in nested objects
+// console.log(user.hasOwnProperty("ismarried")); // return true since the mentioned key exists 
+// console.log(user.hasOwnProperty("ismarriedTo")); // retrun false since the mentioned key doesn't exists
+// console.log(newUser.email.hasOwnProperty("primary")); // to know if key exists or not in nested objects
+
+const randomUser = {
+    name: "dhruvin",
+    age: 22,
+    city: "Seoul",
+    isMarried: false
+}
+
+const { isMarried } = randomUser // Object Destructuring 
+const { isMarried : married } = randomUser // We can also give another name to the keys as we like
+
+console.log(isMarried);
+console.log(married);
