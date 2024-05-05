@@ -6,7 +6,7 @@ greeting();
 
 // ()() // syntax of IIFE, in first () we write our funtion's code
 
-( function greetMe () {
+( function greetMe () { // this is named IIFE
     console.log("Welcome Again User");
 })();
 
@@ -19,3 +19,5 @@ greeting();
 ( (name) => {
     console.log(`Welcome ${name}`);
 } )("Dhruvin");
+
+// when writing 2 IIFEs in a single code, it's very important to end the above line of code with ; 
